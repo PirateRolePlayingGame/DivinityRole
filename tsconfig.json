@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "module": "esnext",
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true
+  },
+  "exclude": [
+    "node_modules",
+    "src/renderPdf.tsx",
+    "src/**/*.test.tsx",
+    "src/**/*.test.ts"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "divinity-role",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build:pdf": "rm -rf pdf && tsc -p ./tsconfig.base.json",
+    "pdf": "yarn build:pdf && node ./dist/renderPdf.js",
+    "serve": "webpack-dev-server"
+  },
+  "dependencies": {
+    "@react-pdf/renderer": "^1.4.0",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "typescript": "^3.3.3333"
+  },
+  "devDependencies": {
+    "@types/node": "^11.9.5",
+    "@types/react": "^16.8.5",
+    "@types/react-dom": "^16.8.2",
+    "copy-webpack-plugin": "^5.0.0",
+    "live-server": "^1.2.1",
+    "ts-loader": "^5.3.3",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
+  }
+}
