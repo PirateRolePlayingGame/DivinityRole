@@ -13,6 +13,8 @@ Font.register(
 );
 
 import { Header } from './components/Header';
+import { Background } from './components/Background';
+import { CharPicture } from './components/CharPicture';
 
 const styles = StyleSheet.create({
   page: {
@@ -40,7 +42,11 @@ export const RoleSheet = {
   ),
   Page2: () => (
     <Page size="A4" style={styles.page}>
-      <Text>Page 2</Text>
+      <SplitContainer 
+        leftSlot={<Background />}
+        rightSlot={<CharPicture />}
+      />
+      <Text>Skillpedia</Text>
     </Page>
   )
 };
