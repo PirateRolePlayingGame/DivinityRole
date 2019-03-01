@@ -8,7 +8,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row'
   },
   writingSpace: {
-    borderBottom: '1 solid #000000',
+    borderBottomWidth: 1,
+    borderBottomColor: '#000000',
+    borderBottomStyle: 'solid',
     flexGrow: 1,
     position: 'relative',
     bottom: 3

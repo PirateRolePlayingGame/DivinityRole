@@ -9,7 +9,9 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   box: {
-    border: '1 solid #000000',
+    borderWidth: 1,
+    borderColor: '#000000',
+    borderStyle: 'solid',
     position: 'relative',
     width: 50,
     height: 20,

@@ -19,7 +19,9 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'column',
     width: 150,
-    border: '1 solid #000000',
+    borderWidth: 1,
+    borderColor: '#000000',
+    borderStyle: 'solid',
     marginLeft: 16
   }
 });
@@ -35,8 +37,9 @@ const PersonalInfo = () => (
 const Stats = () => (
   <View style={styles.statsContainer}>
     <StatsLabel label="HP" />
-    <StatsLabel label="Armor 1" />
-    <StatsLabel label="Armor 2" />
+    <StatsLabel label="AP" />
+    <StatsLabel label="Physical Armor" />
+    <StatsLabel label="Magical Armor" />
   </View>
 );
 

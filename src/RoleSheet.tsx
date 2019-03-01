@@ -1,5 +1,7 @@
 import * as React from 'react';
-import { Document, Page, StyleSheet, Font } from '@react-pdf/renderer';
+import { Document, Page, StyleSheet, Font, Text } from '@react-pdf/renderer';
+import { Skills } from './components/Skills/Skills';
+import { SplitContainer } from './components/SplitContainer';
 
 Font.register(
   `${__dirname}/assets/Enchanted Land.otf`,
@@ -14,9 +16,12 @@ const styles = StyleSheet.create({
   page: {
     display: 'flex',
     flexDirection: 'column',
-    backgroundColor: '#E4E4E4',
+    backgroundColor: '#fafafa',
     fontFamily: 'EnchantedLand',
-    margin: 10
+    borderWidth: 10,
+    borderStyle: 'solid',
+    borderColor: '#000000',
+    padding: 10
   }
 });
 
@@ -25,6 +30,10 @@ export const RoleSheet = {
     <Document>
       <Page size="A4" style={styles.page}>
         <Header />
+        <SplitContainer
+          leftSlot={<Skills />}
+          rightSlot={<Text>Right!</Text>}
+        />
       </Page>
     </Document>
   )

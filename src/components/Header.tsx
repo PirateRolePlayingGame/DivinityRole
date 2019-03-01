@@ -13,16 +13,13 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center'
-  },
-  titleText: {
-    fontSize: 48
   }
 });
 
 export const Header = () => (
   <View style={styles.container}>
     <View style={styles.title}>
-      <TextLabel>DivinityRPG</TextLabel>
+      <TextLabel size={48}>DivinityRPG</TextLabel>
     </View>
     <StatsContainer />
   </View>
