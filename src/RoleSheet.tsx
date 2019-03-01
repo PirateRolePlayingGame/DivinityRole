@@ -3,6 +3,7 @@ import { Page, StyleSheet, Font, Text } from '@react-pdf/renderer';
 import { Skills } from './components/Skills/Skills';
 import { Attributes } from './components/Attributes';
 import { SplitContainer } from './components/SplitContainer';
+import { NormalAbilities } from './components/NormalAbilities';
 
 Font.register(
   `${__dirname}/assets/Enchanted Land.otf`,
@@ -34,6 +35,7 @@ export const RoleSheet = {
         leftSlot={<Skills />}
         rightSlot={<Attributes />}
       />
+      <NormalAbilities />
     </Page>
   ),
   Page2: () => (
