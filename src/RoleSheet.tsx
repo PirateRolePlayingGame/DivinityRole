@@ -27,14 +27,17 @@ const styles = StyleSheet.create({
 
 export const RoleSheet = {
   Page1: () => (
-    <Document>
-      <Page size="A4" style={styles.page}>
-        <Header />
-        <SplitContainer
-          leftSlot={<Skills />}
-          rightSlot={<Text>Right!</Text>}
-        />
-      </Page>
-    </Document>
+    <Page size="A4" style={styles.page}>
+      <Header />
+      <SplitContainer
+        leftSlot={<Skills />}
+        rightSlot={<Text>Right!</Text>}
+      />
+    </Page>
+  ),
+  Page2: () => (
+    <Page size="A4" style={styles.page}>
+      <Text>Page 2</Text>
+    </Page>
   )
 };
