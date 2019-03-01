@@ -19,7 +19,7 @@ interface CircleProps {
   style: any;
 }
 
-export const Header: React.FunctionComponent<CircleProps> = ({
+export const Circle: React.FunctionComponent<CircleProps> = ({
   children,
   radius = 16,
   style = {}

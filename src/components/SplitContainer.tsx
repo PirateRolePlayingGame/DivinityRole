@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   split: {
-    width: '50%'
+    width: '50%',
   }
 });
 
@@ -21,7 +21,7 @@ export const SplitContainer: React.FunctionComponent<SplitContainerProps> = ({
   rightSlot
 }) => (
   <View style={styles.container}>
-    <View style={styles.split}>{leftSlot}</View>
+    <View style={{ ...styles.split, ...{ marginRight: 10 } }}>{leftSlot}</View>
     <View style={styles.split}>{rightSlot}</View>
   </View>
 );

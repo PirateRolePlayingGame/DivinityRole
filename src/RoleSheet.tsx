@@ -1,6 +1,7 @@
 import * as React from 'react';
-import { Document, Page, StyleSheet, Font, Text } from '@react-pdf/renderer';
+import { Page, StyleSheet, Font, Text } from '@react-pdf/renderer';
 import { Skills } from './components/Skills/Skills';
+import { Attributes } from './components/Attributes';
 import { SplitContainer } from './components/SplitContainer';
 
 Font.register(
@@ -31,7 +32,7 @@ export const RoleSheet = {
       <Header />
       <SplitContainer
         leftSlot={<Skills />}
-        rightSlot={<Text>Right!</Text>}
+        rightSlot={<Attributes />}
       />
     </Page>
   ),
