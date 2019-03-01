@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build:pdf": "rm -rf pdf && tsc -p ./tsconfig.pdf.json && cp -a ./src/assets ./pdf/assets",
-    "pdf": "yarn build:pdf && node ./pdf/renderPdf.js",
+    "pdf": "yarn build:pdf && node ./pdf/renderPdf.js && open ./pdf/DivinityRPG.pdf",
     "serve": "webpack-dev-server"
   },
   "dependencies": {
