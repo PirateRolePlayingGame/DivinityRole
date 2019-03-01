@@ -6,8 +6,19 @@
     "module": "esnext",
     "target": "es5",
     "jsx": "react",
-    "allowJs": true
+    "allowJs": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./node_modules/@react-pdf/renderer/index.d.ts"
+    ]
   },
+  "files": [
+    "./node_modules/@react-pdf/renderer/index.d.ts"
+  ],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
   "exclude": [
     "node_modules",
     "src/renderPdf.tsx",

@@ -10,5 +10,14 @@
     "outDir": "./pdf/",
     "strict": true,
     "esModuleInterop": true
-  }
+  },
+  "files": [
+    "./node_modules/@react-pdf/renderer/index.d.ts",
+    "src/renderPdf.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/**/*.test.tsx",
+    "src/**/*.test.ts"
+  ]
 }
