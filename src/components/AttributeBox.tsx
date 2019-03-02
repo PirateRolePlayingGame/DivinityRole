@@ -21,15 +21,13 @@ const styles = StyleSheet.create({
   title: {
     position: 'absolute',
     top: -10,
-    left: '50%',
-    transform: 'translateX(-50%)',
+    left: 10,
     backgroundColor: '#fafafa'
   },
   circle: {
     position: 'absolute',
     bottom: -10,
-    left: '50%',
-    transform: 'translateX(-50%)',
+    left: WIDTH / 2 - 10,
     backgroundColor: '#fafafa'
   }
 });
