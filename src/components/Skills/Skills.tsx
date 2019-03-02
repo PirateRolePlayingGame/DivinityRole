@@ -22,7 +22,7 @@ export const Skills = () => (
     <TextLabel size={24}>Skills</TextLabel>
     <Table
       headers={HEADERS}
-      rows={15}
+      rows={12}
     />
   </View>
 );

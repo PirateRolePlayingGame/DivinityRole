@@ -5,7 +5,8 @@ import { TextLabel } from './TextLabel';
 const styles = StyleSheet.create({
   container: {
     display: 'flex',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    marginTop: 15
   },
   abilitiesContainer: {
 

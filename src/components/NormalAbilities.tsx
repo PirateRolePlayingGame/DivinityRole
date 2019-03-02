@@ -6,10 +6,10 @@ export const NormalAbilities = () => (
   <Abilities
     title="Abilities"
     abilities={[
-      "Aerotheurge - Wind/Electric/Telekinesis",
-      "Geomancy - Earth",
-      "Pyrokinetic - Fire",
-      "Hydrosophist - Water",
+      "Aerotheurge",
+      "Geomancy",
+      "Pyrokinetic",
+      "Hydrosophist",
       "Summoning",
       "Necromancer",
       "Polymorph",

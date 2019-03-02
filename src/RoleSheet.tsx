@@ -4,6 +4,8 @@ import { Skills } from './components/Skills/Skills';
 import { Attributes } from './components/Attributes';
 import { SplitContainer } from './components/SplitContainer';
 import { NormalAbilities } from './components/NormalAbilities';
+import { CivicAbilities } from './components/CivicAbilities';
+import { Inventory } from './components/Inventory';
 
 Font.register(
   `${__dirname}/assets/Enchanted Land.otf`,
@@ -25,7 +27,7 @@ const styles = StyleSheet.create({
     borderWidth: 10,
     borderStyle: 'solid',
     borderColor: '#000000',
-    padding: 10
+    padding: 10,
   }
 });
 
@@ -37,16 +39,23 @@ export const RoleSheet = {
         leftSlot={<Skills />}
         rightSlot={<Attributes />}
       />
-      <NormalAbilities />
+      <SplitContainer 
+        leftSlot={
+          <SplitContainer 
+            leftSlot={<NormalAbilities />}
+            rightSlot={<CivicAbilities />}
+          />
+        }
+        rightSlot={<Inventory/>}
+      />
     </Page>
   ),
   Page2: () => (
     <Page size="A4" style={styles.page}>
-      <SplitContainer 
+      <SplitContainer
         leftSlot={<Background />}
         rightSlot={<CharPicture />}
       />
-      <Text>Skillpedia</Text>
     </Page>
   )
 };
