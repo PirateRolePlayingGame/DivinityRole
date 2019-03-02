@@ -7,8 +7,12 @@ const styles = StyleSheet.create({
   container: {
     display: 'flex',
     flexDirection: 'column',
-    borderRight: '2px solid black',
-    borderBottom: '2px solid black',
+    borderRightColor: '#000000',
+    borderRightStyle: 'solid',
+    borderRightWidth: 2,
+    borderLeftColor: '#000000',
+    borderLeftStyle: 'solid',
+    borderLeftWidth: 2,
     margin: 10,
     height: 350
   },
@@ -20,7 +24,10 @@ const styles = StyleSheet.create({
   }
 });
 
-const createArrayOfLines = (amount: number) => new Array(amount).fill(1);
+const createArrayOfLines = (amount: number) => Array.from(
+  { length: amount },
+  (_, index) => index
+);
 
 export const Background = () => (
   <View style={styles.container}>

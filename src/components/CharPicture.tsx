@@ -7,8 +7,12 @@ const styles = StyleSheet.create({
   container: {
     display: 'flex',
     flexDirection: 'column',
-    borderLeft: '2px solid black',
-    borderBottom: '2px solid black',
+    borderLeftColor: '#000000',
+    borderLeftStyle: 'solid',
+    borderLeftWidth: 2,
+    borderBottomColor: '#000000',
+    borderBottomStyle: 'solid',
+    borderBottomWidth: 2,
     margin: 10,
     height: 350
   },
@@ -19,8 +23,6 @@ const styles = StyleSheet.create({
     marginBottom: 25
   }
 });
-
-const createArrayOfLines = (amount: number) => new Array(amount).fill(1);
 
 export const CharPicture = () => (
   <View style={styles.container}>

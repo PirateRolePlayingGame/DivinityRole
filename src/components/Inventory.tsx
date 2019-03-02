@@ -18,13 +18,16 @@ const styles = StyleSheet.create({
   }
 });
 
-const createArrayOfLines = (amount: number) => new Array(amount).fill(1);
+const createArrayOfLines = (amount: number) => Array.from(
+  { length: amount },
+  (_, index) => index
+);
 
 export const Inventory = () => (
   <View style={styles.container}>
     <View style={styles.title}>
       <TextLabel size={24}>Inventory</TextLabel>
     </View>
-    <TextLines lineAmount={createArrayOfLines(15)}/>
+    <TextLines lineAmount={createArrayOfLines(12)}/>
   </View>
 );

@@ -3,12 +3,11 @@ import { View } from '@react-pdf/renderer';
 import { SingleLine } from './SingleLine';
 
 export const TextLines = (props: any) => {
-  console.log(props);
   return(
     <View>
       {
-        props.lineAmount.map(() => {
-          return <SingleLine />
+        props.lineAmount.map((_: any, index: number) => {
+          return <SingleLine key={index} />
         })
       }
     </View>

@@ -7,7 +7,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: '50%',
     borderColor: '#000000',
     borderWidth: 1,
     borderStyle: 'solid'
@@ -29,7 +28,8 @@ export const Circle: React.FunctionComponent<CircleProps> = ({
       ...styles.container,
       ...{
         width: radius,
-        height: radius
+        height: radius,
+        borderRadius: Math.floor(radius / 2)
       },
       ...style
     }}

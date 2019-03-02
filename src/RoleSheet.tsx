@@ -6,6 +6,9 @@ import { SplitContainer } from './components/SplitContainer';
 import { NormalAbilities } from './components/NormalAbilities';
 import { CivicAbilities } from './components/CivicAbilities';
 import { Inventory } from './components/Inventory';
+import { Header } from './components/Header';
+import { Background } from './components/Background';
+import { CharPicture } from './components/CharPicture';
 
 Font.register(
   `${__dirname}/assets/Enchanted Land.otf`,
@@ -13,10 +16,6 @@ Font.register(
     family: 'EnchantedLand'
   }
 );
-
-import { Header } from './components/Header';
-import { Background } from './components/Background';
-import { CharPicture } from './components/CharPicture';
 
 const styles = StyleSheet.create({
   page: {
@@ -39,9 +38,9 @@ export const RoleSheet = {
         leftSlot={<Skills />}
         rightSlot={<Attributes />}
       />
-      <SplitContainer 
+      <SplitContainer
         leftSlot={
-          <SplitContainer 
+          <SplitContainer
             leftSlot={<NormalAbilities />}
             rightSlot={<CivicAbilities />}
           />

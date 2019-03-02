@@ -6,7 +6,9 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'column',
     width: '100%',
-    borderBottom: '0.5px solid black',
+    borderBottomColor: '#000000',
+    borderBottomWidth: 1,
+    borderBottomStyle: 'solid',
     height: 18,
   }
 });
